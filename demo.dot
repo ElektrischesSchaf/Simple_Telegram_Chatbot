@@ -1,0 +1,26 @@
+digraph G {
+ user -> echo [label="echo"];
+ echo -> repeat_once [label="1"];
+ echo -> repeat_twice [label="2"];
+ echo -> repeat_three [label="3"];
+ repeat_once -> output1 [label="text"];
+ repeat_twice -> output2 [label="text"];
+ repeat_three -> output3 [label="text"];
+  user -> calculation [label="math"];
+  calculation -> integer1 [label="integer"];
+  integer1 -> operator [label="+ - * /"];
+  operator -> integer2 [label="integer"];
+  integer2 -> result;
+  user -> image_or_video [label="media"];
+  image_or_video -> yee_meme [label="yee"];
+  yee_meme -> long_neck [label="long"];
+  yee_meme -> big_one [label="big"];
+  image_or_video -> pokemon [label="pokemon"];
+  pokemon -> pikachu [label="pikachu"];
+  pokemon -> charmander [label="charmander"];
+  user -> search [label="search"];
+  search -> google [label="google"];
+  search -> youtube [label="youtube"];
+  search -> yahoo [label="yahoo"];
+  search -> bing [label="bing"];
+}
